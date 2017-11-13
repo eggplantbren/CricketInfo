@@ -2,9 +2,9 @@
 #define CricketInfo_ConstantHazard
 
 // Includes
-#include <array>
 #include <ostream>
 #include <RNG.h>
+#include <vector>
 
 namespace CricketInfo
 {
@@ -24,8 +24,8 @@ class ConstantHazard
         static constexpr size_t N = 100;
 
         // The scores, and the latent us that produce them
-        std::array<double, N> us;
-        std::array<int, N> xs;
+        std::vector<double> us;
+        std::vector<int> xs;
 
         // Compute the xs from the us
         void compute_xs();
