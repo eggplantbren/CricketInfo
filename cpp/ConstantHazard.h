@@ -23,8 +23,12 @@ class ConstantHazard
         // Number of scores
         static constexpr size_t N = 100;
 
-        // The scores
-        std::array<double, N> xs;
+        // The scores, and the latent us that produce them
+        std::array<double, N> us;
+        std::array<int, N> xs;
+
+        // Compute the xs from the us
+        void compute_xs();
 
     public:
 
