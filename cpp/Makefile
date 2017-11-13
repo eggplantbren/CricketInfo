@@ -1,4 +1,4 @@
-INFONEST_PATH = /home/brewer/Projects/InfoNest/cpp
+INFONEST_PATH = ../InfoNest/cpp
 CXXFLAGS = -std=c++14 -O3 -Wall -Wextra -pedantic
 
 default:
