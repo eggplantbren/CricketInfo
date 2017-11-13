@@ -2,8 +2,8 @@
 #define CricketInfo_ConstantHazard
 
 // Includes
+#include <array>
 #include <ostream>
-#include <vector>
 #include <RNG.h>
 
 namespace CricketInfo
@@ -17,9 +17,17 @@ class ConstantHazard
 {
     private:
 
+        // Parameter
+        double mu;
 
+        // Number of scores
+        static constexpr size_t N = 100;
+
+        // The scores
+        std::array<double, N> xs;
 
     public:
+
         // Do-nothing constructor
         ConstantHazard();
 
@@ -33,6 +41,7 @@ class ConstantHazard
         void print(std::ostream& out) const;
 
     public:
+
         // A few options to use for `distance`
         static double parameter_distance
                             (const ConstantHazard& s1,

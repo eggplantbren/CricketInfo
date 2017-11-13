@@ -3,7 +3,10 @@
 namespace CricketInfo
 {
 
+ConstantHazard::ConstantHazard()
+{
 
+}
 
 } // namespace CricketInfo
 
