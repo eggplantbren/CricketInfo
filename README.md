@@ -24,9 +24,9 @@ See LICENSE file for details.
 
 ## Some basic results
 
+These are all for datasets of 100 innings.
+
 For the constant hazard model, the average depth is 8.607 +- 0.044,
 so the conditional (differential) entropy is 2.393 +- 0.044 nats.
 The differential entropy of the prior is 4.350 nats.
-
-
 
