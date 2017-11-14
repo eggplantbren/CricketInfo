@@ -9,6 +9,8 @@
 namespace CricketInfo
 {
 
+double logsumexp(const std::vector<double>& logv);
+
 /*
 * Batting stuff with an exponential hazard model
 */

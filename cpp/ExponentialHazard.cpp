@@ -92,6 +92,10 @@ void ExponentialHazard::compute_logl()
     for(size_t i=0; i<logps.size(); ++i)
         logps[i] += log(1.0/(mu[i] + 1.0));
 
+    double log_ptot = logsumexp(logps);
+    for(double& logp: logps)
+        logp -= log_ptot;
+
     for(auto x: xs)
         logl += logps[x];
 }
@@ -143,6 +147,21 @@ double ExponentialHazard::parameter_distance(const ExponentialHazard& s1,
                                              const ExponentialHazard& s2)
 {
     return std::abs(s1.mu2 - s2.mu2);
+}
+
+double logsumexp(const std::vector<double>& logv)
+{
+	int n = static_cast<int>(logv.size());
+	//if(n<=1)
+	//	cout<<"Warning in logsumexp"<<endl;
+	double max = *std::max_element(logv.begin(), logv.end());
+	double answer = 0;
+	// log(sum(exp(logf)) 	= log(sum(exp(logf - max(logf) + max(logf)))
+	//			= max(logf) + log(sum(exp(logf - max(logf)))
+	for(int i=0; i<n; i++)
+		answer += exp(logv[i] - max);
+	answer = max + log(answer);
+	return answer;
 }
 
 } // namespace CricketInfo
