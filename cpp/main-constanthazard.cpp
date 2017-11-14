@@ -15,7 +15,7 @@ int main()
     InfoNest::RNG rng1(seed1);
 
     // Define run parameters
-    constexpr double depth         = 15.0;
+    constexpr double depth         = 20.0;
     constexpr size_t num_reps      = 1000;
     constexpr size_t num_particles = 10;
     constexpr size_t mcmc_steps    = 10000;
