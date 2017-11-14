@@ -20,3 +20,13 @@ You'll also need to compile InfoNest before you can compile CricketInfo.
 
 This is free software released under the GNU General Public License, version 3.
 See LICENSE file for details.
+
+
+## Some basic results
+
+For the constant hazard model, the average depth is 8.607 +- 0.044,
+so the conditional (differential) entropy is 2.393 +- 0.044 nats.
+The differential entropy of the prior is 4.350 nats.
+
+
+
