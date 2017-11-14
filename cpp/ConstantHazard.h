@@ -23,12 +23,18 @@ class ConstantHazard
         // Number of scores
         static constexpr size_t N = 100;
 
-        // The scores, and the latent us that produce them
-        std::vector<double> us;
+        // The scores
         std::vector<int> xs;
 
-        // Compute the xs from the us
-        void compute_xs();
+        // Log likelihood
+        double logl;
+
+        // Generate scores
+        void generate_xs(InfoNest::RNG& rng);
+
+        // Compute the log likelihood
+        void compute_logl();
+
 
     public:
 

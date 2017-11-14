@@ -24,7 +24,8 @@ int main()
     InfoNest::execute<CricketInfo::ConstantHazard>
                         (rng0, rng1,
                          depth, num_reps, num_particles, mcmc_steps,
-                         CricketInfo::ConstantHazard::parameter_distance);
+                         CricketInfo::ConstantHazard::parameter_distance,
+                         InfoNest::Mode::conditional_entropy);
 
 
     return 0;
