@@ -1,5 +1,5 @@
 INFONEST_PATH = ../InfoNest/cpp
-CXXFLAGS = -std=c++14 -O3 -g -Wall -Wextra -pedantic
+CXXFLAGS = -std=c++14 -O3 -Wall -Wextra -pedantic
 OBJECTS = ConstantHazard.o
 
 default:
