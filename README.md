@@ -8,6 +8,14 @@ which I've included as a submodule in this repository. Make sure you use
 
     $ git clone --recursive https://github.com/eggplantbren/CricketInfo
 
+You'll also need to compile InfoNest before you can compile CricketInfo.
+
+    $ cd CricketInfo
+    $ cd InfoNest/cpp
+    $ make
+    $ cd ../../cpp
+    $ make
+
 (c) 2017 Brendon J. Brewer
 
 This is free software released under the GNU General Public License, version 3.
