@@ -82,7 +82,7 @@ void ExponentialHazard::compute_logl()
     // Calculate effective average function
     std::vector<double> mu(max_score + 1);
     for(size_t i=0; i<mu.size(); ++i)
-        mu[i] = mu0 + (mu2 - mu0)*exp(-static_cast<double>(i)*oneOverL);
+        mu[i] = mu2 + (mu0 - mu2)*exp(-static_cast<double>(i)*oneOverL);
 
     // Calculate log-probabilities
     std::vector<double> logps(max_score+1);
