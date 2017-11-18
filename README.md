@@ -30,3 +30,8 @@ For the constant hazard model, the average depth is 8.607 +- 0.044,
 so the conditional (differential) entropy is 2.393 +- 0.044 nats.
 The differential entropy of the prior is 4.350 nats.
 Therefore, the mutual information is 1.957 +- 0.044 nats.
+
+For the exponential hazard model, mu2 was the target parameter.
+The average depth is 9.275 +- 0.053, so the conditional (differential)
+entropy is 3.060 +- 0.053 nats. Therefore, the mutual information is
+1.290 +- 0.053 nats.
