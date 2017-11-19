@@ -35,3 +35,12 @@ For the exponential hazard model, mu2 was the target parameter.
 The average depth is 9.275 +- 0.053, so the conditional (differential)
 entropy is 3.060 +- 0.053 nats. Therefore, the mutual information is
 1.290 +- 0.053 nats.
+
+## Results as a function of the number of innings
+
+#### Constant Hazard model
+
+N=10 => Mutual information = 0.910 +- 0.043 nats.
+N=100 => Mutual information = 1.957 +- 0.044 nats.
+N=200 => Mutual information = 2.249 +- 0.045 nats.
+
